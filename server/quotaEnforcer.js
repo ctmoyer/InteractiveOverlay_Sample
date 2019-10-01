@@ -39,21 +39,13 @@ class QuotaEnforcer{
     }
     
     checkQuota(){
-        // this.canEmit = ( this.rateQuota === 0 || (this.eventCounter < this.rateQuota && this.msgSent === true ) );
         return (this.rateQuota === 0 || (this.eventCounter < this.rateQuota && this.msgSent === true ) );
-        // return this.canEmit;
     }
 
     async taskTimer(){
-        // let label;
-        // if (this.direction===0){
-        //     label =`Outgoing`;}
-        // else{
-        //     label = `Incoming`}
         setTimeout(()=>{
             this.eventCounter--;
             if(this.direction === 0)
-                // console.log(`${label} Event Counter: ${this.eventCounter}`);
             this.eventEmitter.emit('timerUp');
         },this.quotaInterval);
     }

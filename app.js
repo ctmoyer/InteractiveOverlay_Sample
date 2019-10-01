@@ -60,15 +60,6 @@ outgoingQEnforcer.eventEmitter.on('enqueue', messageData=>{
     });
 });
 
-// chat
-
-
-// join
-
-
-// actions
-
-
 //#endregion
 
 
@@ -93,12 +84,6 @@ function messageParser(messageData){
     
 }
 
-
-
-// Join response
-
-
-// Action Response
 
 
 //#endregion
