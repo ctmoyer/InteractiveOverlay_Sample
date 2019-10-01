@@ -1,0 +1,17 @@
+{
+  "name": "interactive-overlay",
+  "version": "0.0.2",
+  "description": "Program which aims to connect twitch chat to overlay elements meaningfully.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bombbeard",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "streamlabs-socket-client": "0.0.4",
+    "tmi.js": "^1.4.5"
+  }
+}

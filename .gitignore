@@ -1,4 +1,6 @@
 
 *.psd
 node_modules/*
-*.json
+*_secrets.json
+*client/anims/*.json
+client/assets/anims/*.json
